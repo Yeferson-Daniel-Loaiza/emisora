@@ -1,0 +1,574 @@
+/* Importando fuentes de google font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;0,300;0,400;1,200&family=Roboto:wght@100;300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* aplicando estilos a la navegacion */
+.navegacion {
+  width: 100%;
+  height: 80px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav ul {
+  display: flex;
+  padding: 0px 30px;
+}
+.nav ul li {
+  list-style: none;
+  padding: 0px 10px;
+  line-height: 80px;
+}
+.nav li a {
+  color: black;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.nav li a:hover {
+  color: rgb(12, 215, 12);
+}
+.logo-a {
+  width: 20%;
+}
+.logo {
+  width: 40%;
+  margin: 5px 20px;
+  cursor: pointer;
+}
+/* aplicando estilo a presentacion */
+.presen {
+  height: calc(100vh - 80px);
+  display: flex;
+}
+.presen .info {
+  padding: 200px 20px;
+}
+.info h1 {
+  font-size: 40px;
+  padding: 20px 40px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+.info h3 {
+  font-size: 20px;
+  padding: 0px 40px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+.info img {
+  width: 35%;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+#radioload {
+  text-align: center;
+  float: right;
+  top: 40px;
+  margin: 10px 30px;
+  position: absolute;
+  right: 50px;
+  top: 330px;
+}
+/* estilo de la pagina de faceboock */
+#fb-root {
+  width: 100%;
+  height: 100vh;
+  background: #242629;
+  text-align: center;
+  justify-content: center;
+}
+.fb-page {
+  position: relative;
+  top: 30px;
+}
+/* aplicando estilo a secion sobre nosotros */
+#sobre-nosotros {
+  width: 100%;
+  height: 100vh;
+  background: rgb(217, 217, 217);
+}
+.titulo_sobre {
+  text-align: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  padding: 20px;
+}
+.contenedor_sobrenosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+  width: 50%;
+  height: 400px;
+  margin: 130px auto;
+  background: #242629;
+  border-radius: 20px;
+}
+.contenedor_sobrenosotros img {
+  width: 75%;
+  position: relative;
+  top: 120px;
+  right: -30px;
+}
+.contenedor_sobrenosotros h3 {
+  margin: 80px 30px;
+  width: 300px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+}
+.texto-somo-h1 {
+  margin: 40px 0px;
+  color: white;
+}
+/* aplicando estilo a contacto */
+#contacto {
+  width: 100%;
+  height: 100vh;
+  background: #242629;
+}
+.titulo-conta {
+  text-align: center;
+  color: white;
+  padding: 30px 0px 20px 0px;
+}
+#contacto hr {
+  width: 50%;
+  position: absolute;
+  right: 330px;
+}
+.contenedor-contac {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+  width: 100%;
+}
+.logo-conta {
+  width: 60%;
+  position: relative;
+  right: 50px;
+  top: 140px;
+}
+.contenedor-contac h2 {
+  width: 500px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  top: 50px;
+}
+.contenedor-contac h2:not(.tex-conta-h2, .tex-conta-h3) {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+.tex-conta-h3 {
+  margin: 30px 0px;
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+}
+.tex-conta-h2 {
+  color: white;
+  font-weight: 500;
+}
+.tex-info-contac {
+  margin: 140px;
+  position: relative;
+  top: -50px;
+}
+.redes {
+  margin: auto;
+}
+.redes a {
+  position: relative;
+  top: -70px;
+  padding: 20px;
+  color: #3b5999;
+  font-size: 20px;
+}
+.redes a:nth-child(2) {
+  color: #25d366;
+}
+/* aplicando estilos al footer */
+.footer {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+}
+.logo-footer {
+  width: 10%;
+}
+/* aplicando stilo a el responsive */
+@media screen and (max-width: 1068px) {
+  .presen {
+    display: block;
+  }
+  .logo {
+    width: 80%;
+  }
+  .info img {
+    width: 25%;
+  }
+  #radioload {
+    top: 680px;
+    right: 300px;
+  }
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .info h1 {
+    font-size: 45px;
+  }
+  .info h3 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 838px) {
+  #radioload {
+    right: 195px;
+    top: 680px;
+  }
+  .info h1 {
+    font-size: 35px;
+  }
+  .info h3 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 770px) {
+  #radioload {
+    right: 170px;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  #radioload {
+    right: 140px;
+  }
+  .info img {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 686px) {
+  #radioload {
+    right: 130px;
+  }
+  .nav li a {
+    display: none;
+  }
+  .logo {
+    width: 180%;
+    text-align: center;
+    margin: 10px 200px;
+  }
+}
+
+/* @media screen and (max-width: 412px) {
+  .logo {
+    width: 200%;
+    margin: 10px 120px;
+  }
+  .presen {
+    display: block;
+  }
+  .info h1 {
+    font-size: 20px;
+    padding: 10px 0px;
+  }
+  .info h3 {
+    font-size: 20px;
+  }
+  .info img {
+    width: 60%;
+  }
+  #radioload {
+    top: 540px;
+    right: 25px;
+    margin: 140px 5px;
+    position: inherit;
+  }
+
+  .contenedor_sobrenosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: px;
+    grid-row-gap: 0px;
+    width: 90%;
+    height: 500px;
+    position: relative;
+    top: -70px;
+  }
+  .contenedor_sobrenosotros h3 {
+    width: 80%;
+  }
+  .contenedor_sobrenosotros img {
+    position: relative;
+    top: -30px;
+    margin: 0px 50px;
+    width: 50%;
+  }
+  #contacto hr {
+    right: 45px;
+    width: 75%;
+  }
+  .contenedor-contac {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .tex-info-contac {
+    width: -100%;
+    position: relative;
+    right: 150px;
+    top: -190px;
+  }
+  .contenedor-contac img {
+    position: relative;
+    width: 30%;
+    top: -240px;
+    left: 55px;
+  }
+  .redes {
+    position: relative;
+    top: -650px;
+    right: 35px;
+  }
+} */
+@media screen and (max-width: 393px) {
+  .logo {
+    width: 200%;
+    margin: 10px 120px;
+  }
+  .presen {
+    display: block;
+  }
+  .info h1 {
+    font-size: 20px;
+    padding: 10px 0px;
+  }
+  .info h3 {
+    font-size: 20px;
+  }
+  .info img {
+    width: 60%;
+  }
+  #radioload {
+    top: 540px;
+    right: 25px;
+    margin: 140px 5px;
+    position: inherit;
+  }
+  .contenedor_sobrenosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: px;
+    grid-row-gap: 0px;
+    width: 90%;
+    height: 500px;
+    position: relative;
+    top: -70px;
+  }
+  .contenedor_sobrenosotros h3 {
+    width: 80%;
+  }
+  .contenedor_sobrenosotros img {
+    position: relative;
+    top: -30px;
+    margin: 0px 50px;
+    width: 50%;
+  }
+  #contacto hr {
+    right: 45px;
+    width: 75%;
+  }
+  .contenedor-contac {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .tex-info-contac {
+    width: 70%;
+    position: relative;
+    left: -110px;
+    top: -190px;
+  }
+  .contenedor-contac img {
+    position: relative;
+    width: 60%;
+    top: -240px;
+    left: 55px;
+  }
+  .redes {
+    position: relative;
+    top: -650px;
+    right: 35px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .logo {
+    width: 200%;
+    margin: 10px 120px;
+  }
+  .presen {
+    display: block;
+  }
+  .info h1 {
+    font-size: 20px;
+    padding: 10px 0px;
+  }
+  .info h3 {
+    font-size: 20px;
+  }
+  .info img {
+    width: 60%;
+  }
+  #radioload {
+    top: 540px;
+    right: 25px;
+    margin: 140px -15px;
+    position: inherit;
+  }
+  .contenedor_sobrenosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: px;
+    grid-row-gap: 0px;
+    width: 90%;
+    height: 500px;
+    position: relative;
+    top: -70px;
+  }
+  .contenedor_sobrenosotros h3 {
+    width: 80%;
+  }
+  .contenedor_sobrenosotros img {
+    position: relative;
+    top: -30px;
+    margin: 0px 50px;
+    width: 50%;
+  }
+  #contacto hr {
+    right: 45px;
+    width: 75%;
+  }
+  .contenedor-contac {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .tex-info-contac {
+    width: 70%;
+    position: relative;
+    left: -110px;
+    top: -190px;
+  }
+  .contenedor-contac img {
+    position: relative;
+    width: 60%;
+    top: -240px;
+    left: 55px;
+  }
+  .redes {
+    position: relative;
+    top: -650px;
+    right: 35px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .logo {
+    width: 200%;
+    margin: 10px 120px;
+  }
+  .presen {
+    display: block;
+  }
+  .info h1 {
+    font-size: 20px;
+    padding: 10px 0px;
+  }
+  .info h3 {
+    font-size: 20px;
+  }
+  .info img {
+    width: 60%;
+  }
+  #radioload {
+    top: 540px;
+    right: 25px;
+    margin: 140px -15px;
+    position: inherit;
+  }
+  .texto-somos {
+    display: block;
+    width: 80%;
+    margin: 120px auto;
+  }
+  .texto-somos h1 {
+    font-size: 25px;
+  }
+  .texto-somos h3 {
+    font-size: 20px;
+    width: 100%;
+  }
+  .logo-nos {
+    position: inherit;
+    margin: 0px 70px;
+    width: 50%;
+  }
+  #contacto {
+    height: 100vh;
+  }
+  #contacto hr {
+    right: 45px;
+    width: 75%;
+  }
+  #contacto h3 {
+    font-size: 19px;
+    padding: 50px 40px;
+  }
+  #contacto h2 {
+    font-size: 20px;
+    width: 100%;
+  }
+  .logo-conta {
+    position: inherit;
+    top: 5550px;
+    right: 60px;
+    width: 60%;
+  }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="LA DESPENSA RADIO es Blog Informativo del Municipio de Algeciras y del sur de Colombia que se encarga de mantener bien informados a todos sus seguidores del acontecer diario" />
+  <!-- repruductor -->
+  <meta property="og:title" content="Escuchanos en vivo y en directo" />
+  <meta property="og:image" content="http://radio.netyco.com/StartPage/media/fb1.png" />
+  <meta property="og:site_name" content="Escucha en vivo y en directo nuestra transmisi�n." />
+  <meta property="og:description" content="Escuchanos. Estamos en vivo en este momento" />
+  <script type="text/javascript" src="https://cdn.netyco.com/radio-x-internet/v2/include.js"></script>
+  <title>Despensa Radio</title>
+  <!-- icono ventana -->
+  <link rel="icon" href="public/img/logo-emisora.png" />
+  <!-- css -->
+  <link rel="stylesheet" href="public/css/style.css" />
+  <!-- sweetalert -->
+  <script src="public/js/sweetalert2@11.js"></script>
+  <script src="public/js/bienvanida.js"></script>
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <div class="navegacion">
+    <nav class="nav">
+      <a href="#inicio" class="logo-a"><img src="public/img/logo-emisora.png" alt="despensa radio" class="logo" /></a>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=la.despensaradio9">App mobile</a>
+        </li>
+        <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- presentacion -->
+  <header class="presen">
+    <div class="info">
+      <h1>Estas escuchando la despensa radio</h1>
+      <h3>Descarga nuestra app</h3>
+      <a href="https://play.google.com/store/apps/details?id=la.despensaradio9"><img src="public/img/google-play.png"
+          alt="despensa radio" /></a>
+      <div id="radioload">
+        Tu radio en Internet
+        <a alt="Transmite tu radio por internet, setreaming gratis con Netyco, servidores de radio por internet"
+          href="http://www.netyco.com/radio-x-internet/radio.php">Netyco Argentina</a>
+      </div>
+      <script type="text/javascript">
+        var params = {
+          style: "simple",
+          title: "La Despensa Radio",
+          web: "",
+          streamURL: "https://node-33.zeno.fm/pr44n9drrnhvv?rj",
+          android: "",
+          autoplay: true,
+          bgcolor: "#ff9900",
+          bgimg: "https://i.postimg.cc/fyNZyyJ8/jpg.jpg",
+          position: "center",
+          txtTituloColor: "#000",
+          txtColor: "#ffffff",
+          txtStatusColor: "#000000",
+          btnFondoColor: "#a8a8a8",
+          btnLineaColor: "#000000",
+        };
+        Netyco.insert(params);
+      </script>
+    </div>
+  </header>
+  <!-- noticias -->
+  <section id="fanpage">
+    <div id="fb-root">
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v13.0"
+        nonce="x0CEJtMv"></script>
+      <div class="fb-page" data-href="https://www.facebook.com/LaDespensaRadio/" data-tabs="timeline" data-width=""
+        data-height="500px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+        data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/LaDespensaRadio/" class="fb-xfbml-parse-ignore"><a
+            href="https://www.facebook.com/LaDespensaRadio/">La Despensa Radio</a></blockquote>
+      </div>
+    </div>
+
+  </section>
+  <!-- secion de sobre nosotros -->
+  <section class="sobrenosotros" id="sobre-nosotros">
+    <h1 class="titulo_sobre">Sesion Sobre Nosotros</h1>
+    <div class="contenedor_sobrenosotros">
+      <h3>
+        <span>
+          <h1 class="texto-somo-h1">¿Quienes somos?</h1>
+        </span>
+        Blog Informativo del Municipio de Algeciras y del sur de Colombia que se encarga de mantener bien informados a
+        todos sus seguidores del acontecer diario
+      </h3>
+      <img src="public/img/logo-emisora.png" alt="despensaradio.com">
+    </div>
+  </section>
+  <!-- contacto -->
+  <section id="contacto">
+    <h1 class="titulo-conta">Comunicate con nosotros</h1>
+    <hr />
+    <div class="contenedor-contac">
+      <div class="tex-info-contac">
+        <h2><span>
+            <h3 class="tex-conta-h3">O, aún mejor, ¡Solicita tu canción!</h3>
+          </span>
+          Nos encanta complacer a nuestros oyentes, así que escríbenos y solicita
+          tu canción preferida.
+          <span>
+            <h2 class="tex-conta-h2">Comunícate con nosotros a través de nuestro WhatsApp 317 5306290</h2>
+          </span>
+        </h2>
+      </div>
+      <img src="public/img/logo-emisora.png" alt="despensa radio" class="logo-conta" />
+      <div class="redes">
+        <a href="https://www.facebook.com/LaDespensaRadio/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=573175306290&app=facebook&entry_point=page_cta" target="_blank"><i
+            class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
